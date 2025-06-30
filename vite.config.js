@@ -11,8 +11,7 @@ import somePlugin from 'some-plugin'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),
-    tailwindcss(),
-    autoprefixer(),
+
     somePlugin(),
   ],
   content: [
