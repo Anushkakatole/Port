@@ -5,18 +5,18 @@ function End() {
   return (
     <div>
             {/* Header */}
-        <div className='w-full h-20 pt-2'>
-             <hr className='w-full h-1 mt-2 bg-gray-500 ' />
+        <div className='sm:w-full sm:h-20 sm:pt-2'>
+             <hr className='sm:w-380 ml-10 mr-10 sm:h-1 h-0.5 sm:mt-2 bg-gray-500 ' />
       </div>
-
-      <div className='flex items-center justify-center'>
-        <div className='w-250 h-50  justify-center items-center flex'>
-            <h1 className='text-white text-8xl font-bold p-5'>Anushka<span className='text-purple-600'>Katole </span></h1>
+ 
+      <div className='sm:flex sm:flex-row items-center justify-center'>
+        <div className='sm:w-250 sm:h-50  justify-center items-center flex '>
+            <h1 className='text-white sm:text-8xl text-4xl mt-10 font-bold p-5'>Anushka<span className='text-purple-600'>Katole </span></h1>
         </div>
 
-        <div className='w-140 h-50 flex flex-col '>
-            <div className='w-140 h-35 '>
-            <div className="flex gap-4 text-2xl text-white justify-end mt-27 mr-22">
+        <div className='sm:w-140 sm:h-50 sm:flex sm:flex-col '> 
+            <div className='sm:w-140 sm:h-35 '>
+            <div className="flex gap-4 text-2xl text-white justify-end sm:mt-27 sm:mr-22 mr-35 ">
                <a href="https://github.com/Anushkakatole" target="_blank" rel="noopener noreferrer">
                  <FaGithub className="hover:text-gray-400" /> </a>
                <a href="https://www.linkedin.com/in/anushka-katole-79b380331/" target="_blank" rel="noopener noreferrer">
@@ -25,8 +25,8 @@ function End() {
                   <FaInstagram className="hover:text-pink-400" /></a>
            </div>
             </div>
-            <div className='h-15 w-140 '>
-                <p className='text-xs text-white mr-15 flex justify-end'>© 2025 PiyushKatole All Rights Reserved.</p>
+            <div className='sm:h-15  sm:w-140 '>
+                <p className='text-xs mt-5 mb-10 mr-20 text-white sm:mr-15 flex justify-end'>© 2025 PiyushKatole All Rights Reserved.</p>
             </div>
         </div>
 

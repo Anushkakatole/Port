@@ -8,6 +8,7 @@ import Weave from './Pages/Weave';
 import Trend from './Pages/Trend';
 import Rush from './Pages/Rush'
 import FrontPage from './Pages/FrontPage'
+import './index.css'
 
 function App() {
   return (

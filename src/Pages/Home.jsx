@@ -11,9 +11,9 @@ function App() {
   };
 
   return (
-    <div className="w-full h-screen">
+    <div className="sm:w-full sm:min-h-screen">
       {!videoEnded ? (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative sm:w-full h-screen overflow-hidden">
           <video
             src="/AK.mp4"
             autoPlay
@@ -21,8 +21,8 @@ function App() {
             className="w-full h-full object-cover"
             onEnded={handleVideoEnd}
           />
-          <div className="absolute inset-0 flex items-center justify-center pt-170 bg-black/30">
-            <h1 className="text-white text-5xl font-bold">Anushka <span className='text-purple-600'>Katole</span> </h1>
+          <div className="absolute inset-0 flex items-center justify-center sm:pt-170 pt-150  bg-black/30">
+            <h1 className="text-white text-5xl sm:text-4xl md:text-5xl font-bold  ">Anushka <span className='text-purple-600'>Katole</span> </h1>
           </div>
         </div>
       ) : (

@@ -5,16 +5,16 @@ function Educationtable() {
   return (
     <div className=''>
       {/* Graduation Section */}
-      <div className="overflow-x-auto rounded-lg ml-70 mr-70 ">
-        <table className="table-auto w-full text-sm md:text-base border-separate border-spacing-y-2">
+      <div className="sm:overflow-x-auto ml-10 mr-10 mt-5 sm:rounded-lg sm:ml-70 sm:mr-70 ">
+        <table className="sm:table-auto sm:w-full text-sm md:text-base border-separate border-spacing-y-2">
           <thead className="bg-gray-800 text-purple-600">
             <tr>
               <th className="px-4 py-2 text-left">LEVEL</th>
-              <th className="px-4 py-2 text-left">INSTITUTION</th>
+              <th className="hidden sm:block px-4 py-2 text-left">INSTITUTION</th>
               <th className="px-4 py-2 text-left">UNIVERSITY</th>
-              <th className="px-4 py-2 text-left">YEAR</th>
+              <th className="hidden sm:block px-4 py-2 text-left">YEAR</th>
               <th className="px-4 py-2 text-left">GRADE</th>
-              <th className="px-4 py-2 text-left">HIGHLIGHT</th>
+              <th className="hidden sm:block px-4 py-2 text-left">HIGHLIGHT</th>
             </tr>
           </thead>
           <tbody className="bg-gray-900">
@@ -54,11 +54,11 @@ function Educationtable() {
             ].map((item, idx) => (
               <tr key={idx} className="hover:bg-gray-800 rounded-lg text-gray-500">
                 <td className="px-4 py-3 text-white">{item.level}</td>
-                <td className="px-4 py-3">{item.institution}</td>
-                <td className="px-4 py-3">{item.university}</td>
-                <td className="px-4 py-3">{item.year}</td>
+                <td className="hidden sm:block px-4 py-3">{item.institution}</td>
+                <td className=" px-4 py-3">{item.university}</td>
+                <td className="hidden sm:block px-4 py-3">{item.year}</td>
                 <td className="px-4 py-3">{item.grade}</td>
-                <td className="px-4 py-3">{item.highlight}</td>
+                <td className="hidden sm:block px-4 py-3">{item.highlight}</td>
               </tr>
             ))}
           </tbody>
@@ -67,18 +67,18 @@ function Educationtable() {
 
      {/* School section */}
 
-      <h1 className='text-5xl text-white pt-20 pl-70 mb-10'>Schooling (HSC & SSC)</h1>
+      <h1 className='sm:text-5xl text-3xl text-white sm:pt-20 ml-13 mt-10 sm:pl-70 sm:mb-10'>Schooling (HSC & SSC)</h1>
 
-      <div className="overflow-x-auto rounded-lg ml-70 mr-70 ">
+      <div className="sm:overflow-x-auto sm:rounded-lg sm:ml-70 ml-10 mr-10 pt-3 sm:mr-70 ">
         <table className="table-auto w-full text-sm md:text-base border-separate border-spacing-y-2">
           <thead className="bg-gray-800 text-purple-600">
             <tr>
               <th className="px-4 py-2 text-left">LEVEL</th>
-              <th className="px-4 py-2 text-left">INSTITUTION</th>
+              <th className="hidden sm:block px-4 py-2 text-left">INSTITUTION</th>
               <th className="px-4 py-2 text-left">UNIVERSITY</th>
-              <th className="px-4 py-2 text-left">YEAR</th>
+              <th className="hidden sm:block px-4 py-2 text-left">YEAR</th>
               <th className="px-4 py-2 text-left">GRADE</th>
-              <th className="px-4 py-2 text-left">HIGHLIGHT</th>
+              <th className="hidden sm:block px-4 py-2 text-left">HIGHLIGHT</th>
             </tr>
           </thead>
           <tbody className="bg-gray-900">
@@ -103,11 +103,11 @@ function Educationtable() {
             ].map((item, idx) => (
               <tr key={idx} className="hover:bg-gray-800 rounded-lg text-gray-500">
                 <td className="px-4 py-3 text-white">{item.level}</td>
-                <td className="px-4 py-3">{item.institution}</td>
+                <td className=" hidden sm:block px-4 py-3">{item.institution}</td>
                 <td className="px-4 py-3">{item.university}</td>
-                <td className="px-4 py-3">{item.year}</td>
+                <td className="hidden sm:block px-4 py-3">{item.year}</td>
                 <td className="px-4 py-3">{item.grade}</td>
-                <td className="px-4 py-3">{item.highlight}</td>
+                <td className="hidden sm:block px-4 py-3">{item.highlight}</td>
               </tr>
             ))}
 
