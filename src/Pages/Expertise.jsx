@@ -7,8 +7,8 @@ function Expertise() {
 
       {/* Header */}
       <div className='sm:w-full sm:h-30'>
-        <hr className='sm:w-380 sm:h-1 h-0.5 mt-10 sm:mr-60 ml-10 mr-10 sm:mt-10 bg-gray-500' />
-        <h1 className='sm:text-6xl text-3xl text-white sm:pt-10 sm:pl-60 sm:mb-10 ml-15 mt-10 flex gap-4 font-bold'>
+        <hr className='sm:w-380 sm:h-1 h-0.5 mt-10 sm:mr-60 ml-5 mr-5 sm:mt-10 bg-gray-500' />
+        <h1 className='sm:text-6xl text-3xl text-white sm:pt-10 sm:pl-60 sm:mb-10 ml-10 mt-10 flex gap-4 font-bold'>
           My<span className='text-purple-600'>Expertise</span>
         </h1>
       </div>
