@@ -14,16 +14,21 @@ function Work() {
         </h1>
       </div>
 
-      <div className='text-white  sm:mt-35 sm:ml-50 sm:mr-50 sm:w-300 sm:h-150 h-80 mt-4 ml-5 mr-5 relative overflow-hidden rounded-xl'>
-        <img src="back.jpg" alt="" className='sm:w-full sm:h-full object-coverr' />
-          {/* Text Overlay */}
-            <div className="absolute   bg-black/50 flex flex-col justify-end p-6 text-white">
-                <h2 className="text-3xl font-bold">All Projects</h2>
-                <p className="text-sm mt-1">A showcase of my work — blending creativity, code, and real-world solutions across web development, AI, and design.
-               </p>
-                <button className="mt-4 bg-white text-black px-4 py-2 rounded-full w-fit text-sm">      <Link to="/projects">View Projects</Link>    </button>
-      </div>
-   
+      <div className='text-white sm:mt-35 sm:ml-50 sm:mr-50 sm:w-300 sm:h-150 h-80 mt-4 ml-5 mr-5 relative rounded-xl overflow-hidden'>
+  <img src="back.jpg" alt="" className='w-full h-full object-cover' />
+  
+  {/* Text Overlay */}
+  <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 text-white">
+    <h2 className="text-2xl sm:text-3xl font-bold">All Projects</h2>
+    <p className="text-sm mt-1">
+      A showcase of my work — blending creativity, code, and real-world solutions across web development, AI, and design.
+    </p>
+    <Link to="/projects">
+      <button className="mt-4 bg-white text-black px-4 py-2 rounded-full text-sm">
+        View Projects
+      </button>
+    </Link>
+        </div>
     </div>
     <Goal />
 
