@@ -18,7 +18,7 @@ function Projects() {
         <div className='sm:w-290 sm:h-full flex items-center justify-center gap-4 pt-5'>
           <h3 className='border-2 sm:block hidden rounded-full text-white border-amber-50 p-2 hover:bg-purple-500'><Link to="/Projects">Work</Link></h3>
           <h3 className='border-2 sm:block hidden rounded-full border-amber-50 p-2 bg-white text-black hover:bg-purple-500'><Link to="/FrontPage">Background</Link></h3>
-          <h3 className='border-2 sm:block hidden rounded-full text-white border-amber-50 p-2 hover:bg-purple-500'><Link to="/out">Reach Out</Link></h3>
+          <h3 className='border-2 sm:block hidden rounded-full text-white border-amber-50 p-2 hover:bg-purple-500'>Reach out</h3>
 
           {/* Mobile Menu Icon */}
           <TfiAlignJustify

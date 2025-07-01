@@ -29,7 +29,7 @@ function FrontPage() {
                     <Link to="/FrontPage">Background</Link>
                    </h3>
                    <h3 className="hidden sm:flex rounded-full text-white border-2 border-amber-50 p-2 hover:bg-purple-500">
-                    <Link to="/out">Reach Out</Link>
+                    Reach out
                      </h3>
         {/* Mobile Menu Icon */}
              <TfiAlignJustify
