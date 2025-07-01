@@ -16,7 +16,7 @@ function End() {
 
         <div className='sm:w-140 sm:h-50 sm:flex sm:flex-col '> 
             <div className='sm:w-140 sm:h-35 '>
-            <div className="flex gap-4 text-2xl text-white justify-end sm:mt-27 sm:mr-22 mr-35 ">
+            <div className="flex gap-4 text-2xl text-white justify-end sm:mt-27 sm:mr-22 mr-30 ">
                <a href="https://github.com/Anushkakatole" target="_blank" rel="noopener noreferrer">
                  <FaGithub className="hover:text-gray-400" /> </a>
                <a href="https://www.linkedin.com/in/anushka-katole-79b380331/" target="_blank" rel="noopener noreferrer">
@@ -26,7 +26,7 @@ function End() {
            </div>
             </div>
             <div className='sm:h-15  sm:w-140 '>
-                <p className='text-xs mt-5 mb-10 mr-20 text-white sm:mr-15 flex justify-end'>© 2025 PiyushKatole All Rights Reserved.</p>
+                <p className='text-xs mt-5 mb-10 mr-12 text-white sm:mr-15 flex  justify-end'>© 2025 PiyushKatole All Rights Reserved.</p>
             </div>
         </div>
 
