@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import autoprefixer from 'autoprefixer';
-import somePlugin from 'some-plugin'
 
 
 /** @type {import('tailwindcss').Config} */
@@ -11,8 +10,8 @@ import somePlugin from 'some-plugin'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),
-
-    somePlugin(),
+    tailwindcss(),
+    autoprefixer(),
   ],
   content: [
     "./index.html",
