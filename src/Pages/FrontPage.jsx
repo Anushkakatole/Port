@@ -57,7 +57,7 @@ function FrontPage() {
                    </h3>
             </div>
             <div className=''>
-            <h2 className='text-black  bg-white p-2 flex flex-row gap-2  text-xl w-45 ml-10 rounded-full '>             <Link to="/projects" className=" ">View My Work</Link> <ArrowRight className="h-6 w-6 mt-1 text-purple-500" />
+            <h2 className='text-black  bg-white p-2 flex flex-row gap-2  text-xl sm:w-45 ml-10 w-55 rounded-full '>             <Link to="/projects" className=" ">View My Work</Link> <ArrowRight className="h-6 w-6 mt-1 text-purple-500" />
             </h2>
             </div>
         </div>

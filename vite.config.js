@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import autoprefixer from 'autoprefixer';
 
 
+
 /** @type {import('tailwindcss').Config} */
 
 
@@ -11,7 +12,6 @@ import autoprefixer from 'autoprefixer';
 export default defineConfig({
   plugins: [react(),
     tailwindcss(),
-    autoprefixer(),
   ],
   content: [
     "./index.html",

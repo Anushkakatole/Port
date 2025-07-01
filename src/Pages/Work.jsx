@@ -14,10 +14,10 @@ function Work() {
         </h1>
       </div>
 
-      <div className='text-white bg-amber-400 sm:mt-35 sm:ml-50 sm:mr-50 sm:w-300 sm:h-150 h-80 mt-3 ml-10 mr-10 relative overflow-hidden rounded-xl'>
+      <div className='text-white  sm:mt-35 sm:ml-50 sm:mr-50 sm:w-300 sm:h-150 h-80 mt-3 ml-10 mr-10 relative overflow-hidden rounded-xl'>
         <img src="back.jpg" alt="" className='sm:w-full sm:h-full object-coverr' />
           {/* Text Overlay */}
-            <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 text-white">
+            <div className="absolute   bg-black/50 flex flex-col justify-end p-6 text-white">
                 <h2 className="text-3xl font-bold">All Projects</h2>
                 <p className="text-sm mt-1">A showcase of my work — blending creativity, code, and real-world solutions across web development, AI, and design.
                </p>
