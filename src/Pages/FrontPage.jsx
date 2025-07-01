@@ -16,23 +16,29 @@ function FrontPage() {
     <div className='min-h-screen min-w-screen bg-black overflow-x-hidden'>
          <Link to="/FrontPage"></Link>
         {/* Navbar */}
-        <div className='navbar h-25 w-full  flex  items-center justify-between border-b-1 border-white/25 position: fixed'>
-            <div className='w-200 h-full sm:text-left  flex flex-col items-center ml-5 pt-5'> 
-                <h1 className='text-xl sm:text-2xl text-white mt-2'>Anushka </h1>
-                <h1 className='text-xl sm:text-2xl text-purple-600 ' >Katole</h1>
-            </div>
-            <div className=' w-290  h-full  flex   items-center   justify-center gap-4 sm:mt-0 pt-5'> 
-                <h3 className='border-2 hidden sm:flex rounded-full text-white  border-amber-50 p-2 hover:bg-purple-500'><Link to="/Projects" className=' '>Work</Link></h3>
-                <h3 className='border-2 hidden sm:flex rounded-full border-amber-50 p-2 bg-white text-black hover:bg-purple-500'><Link to="/FrontPage">Background</Link></h3>
-                <h3 className='border-2 hidden sm:flex rounded-full text-white border-amber-50 p-2 hover:bg-purple-500'><Link to="/out">Reach Out</Link></h3>
+        <div className="navbar z-50 fixed top-0 left-0 right-0 h-20 w-full flex items-center justify-between border-b border-white/25 bg-black">
+              <div className="ml-5 pt-5 flex flex-col items-center sm:ml-40 sm:mb-5">
+                   <h1 className="text-xl text-white">Anushka</h1>
+                   <h1 className="text-xl text-purple-600">Katole</h1>
+             </div>
+            <div className="flex items-center justify-center gap-4 pt-5 mr-5 sm:mr-45 sm:mb-5">
+                   <h3 className="hidden sm:flex rounded-full text-white border-2 border-amber-50 p-2 hover:bg-purple-500">
+                   <Link to="/Projects">Work</Link>
+                   </h3>
+                   <h3 className="hidden sm:flex rounded-full bg-white text-black border-2 border-amber-50 p-2 hover:bg-purple-500">
+                    <Link to="/FrontPage">Background</Link>
+                   </h3>
+                   <h3 className="hidden sm:flex rounded-full text-white border-2 border-amber-50 p-2 hover:bg-purple-500">
+                    <Link to="/out">Reach Out</Link>
+                     </h3>
         {/* Mobile Menu Icon */}
              <TfiAlignJustify
-               className='sm:hidden text-white w-6 h-6 cursor-pointer '
+               className='sm:hidden  z-0 text-white w-6 h-6 cursor-pointer '
                onClick={() => setIsMenuOpen(!isMenuOpen)} />
             </div>
       {/* Mobile Menu (Dropdown) */}
       {isMenuOpen && (
-        <div className=' absolute top-20 left-0 sm:hidden bg-transparent  px-4 pl-45 pt-5 flex flex-col gap-3 '>
+        <div className=' absolute  z-10  top-20 left-0 sm:hidden bg-transparent  px-4 pl-45 pt-5 flex flex-col gap-3 '>
           <Link to="/Projects" onClick={() => setIsMenuOpen(false)} className='border-2 rounded-full text-white border-amber-50 px-3 py-1 hover:bg-purple-500'>Work</Link>
           <Link to="/FrontPage" onClick={() => setIsMenuOpen(false)} className='border-2 rounded-full border-amber-50 px-3 py-1 bg-white text-black hover:bg-purple-500'>Background</Link>
           <Link to="/out" onClick={() => setIsMenuOpen(false)} className='border-2 rounded-full text-white border-amber-50 px-3 py-1 hover:bg-purple-500'>Reach Out</Link>
@@ -49,18 +55,32 @@ function FrontPage() {
             </div>
         </div>
         {/** back image  */}
-        <div className='sm:hidden relative'>
-            <img src="bright.jpg" alt="" className=' mt-20 ' />
-            <div className="absolute top-5 left-10 bg-black/50  z-10 flex flex-col mt-20 mb-50  items-center justify-center bg-black/40">
-                  <h3 className='text-white text-xl font-bold p0'>Get to know me <br /><span className='text-xs text-gray-500'>Resume & biography</span> <br /> <br /> 
-                   <span className='font-normal '>Crafting <span className='text-purple-700'> seamless </span> digital <br /> experiences  with precision, passion, <br /> and purpose. From bold <br /> interfaces to fluid <span className='text-purple-700'>  interactions — </span><br />every project here speaks for itself.</span> <br /><br />
-                   </h3>
-            </div>
-            <div className=''>
-            <h2 className='text-black  bg-white p-2 flex flex-row gap-2  text-xl sm:w-45 ml-10 w-55 rounded-full '>             <Link to="/projects" className=" ">View My Work</Link> <ArrowRight className="h-6 w-6 mt-1 text-purple-500" />
-            </h2>
-            </div>
-        </div>
+        <div className="sm:hidden relative h-[300px] mt-20">
+          {/* Background image that doesn't block interaction */}
+            <img
+             src="bright.jpg"
+             alt=""
+               className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"/>
+
+  {/* Text and button over image */}
+  <div className="absolute top-30 left-5 right-5 z-10 flex flex-col items-start justify-center text-white bg-black/60 p-4 rounded-lg">
+    <h3 className="text-xl font-bold">Get to know me</h3>
+    <p className="text-xs text-gray-300">Resume & biography</p>
+    <p className="mt-4 text-sm font-light">
+      Crafting <span className="text-purple-500">seamless</span> digital
+      experiences with precision, passion, and purpose. From bold interfaces to
+      fluid <span className="text-purple-500">interactions —</span> every
+      project here speaks for itself.
+    </p>
+    <Link
+      to="/projects"
+      className="mt-4 bg-white text-black px-4 py-2 rounded-full flex items-center gap-2"
+    >
+      View My Work <ArrowRight className="h-4 w-4 text-purple-500" />
+    </Link>
+  </div>
+</div>
+
 
 
         {/* second page */}
